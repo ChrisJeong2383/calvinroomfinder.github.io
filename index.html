@@ -1,12 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>The Town HTML CSS Template</title>
+  <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="magnific-popup/magnific-popup.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/templatemo-style.css" />
+  <!--
+	The Town
+	https://templatemo.com/tm-525-the-town
+	-->
 </head>
+
 <body>
-  <p>Hello, World!</p>
+  <!-- Hero section -->
+  <section id="hero" class="text-white tm-font-big tm-parallax">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">
+      <div class="container">
+        <div class="tm-next">
+          <a href="#hero" class="navbar-brand">CalvinRoomFinder</a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#work">Our Code</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link tm-nav-link" href="#contact">Project Links</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="text-center tm-hero-text-container">
+      <div class="tm-hero-text-container-inner">
+        <h2 class="tm-hero-title">CalvinRoomFinder</h2>
+        <p class="tm-hero-subtitle">
+          CS396/398 Project
+          <br />by Chris J, David M, David H
+        </p>
+      </div>
+    </div>
+
+    <div class="tm-next tm-intro-next">
+      <a href="#introduction" class="text-center tm-down-arrow-link">
+        <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
+      </a>
+    </div>
+  </section>
+
+  <section id="introduction" class="tm-section-pad-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="img/walk.jpg" alt="Image" class="img-fluid tm-intro-img" />
+        </div>
+        <div class="col-lg-6">
+          <div class="tm-intro-text-container">
+            <h2 class="tm-text-primary mb-4 tm-section-title">Introduction</h2>
+            <p class="mb-4 tm-intro-text">
+              Every year Calvin gets new freshmen and transfer students who are unfamiliar with the campus area.
+              Students new to campus tend to have a difficult time finding their classrooms. We want to address this
+              issue so that students will be less stressed about locating their classrooms at the beginning of the
+              semester.<br><br>
+              Another problem that students face is choosing the most optimal path to a particular building. Calvin’s
+              campus is layed out organically, unlike a rigidly structured city center made up of straight roads in
+              blocks. This means that there are often multiple viable routes to the same building and it can be
+              difficult to decide which route is fastest.<br><br>
+            </p>
+            <h2 class="tm-text-primary tm-section-title mb-4">Solution</h2>
+            <p class="mb-4 tm-intro-text">
+              Our solution to this problem is to build a mobile app that is similar to Google Maps but more specific to
+              Calvin. This app will display a map of Calvin’s campus to the user and will allow them to search for a
+              classroom, then it will guide the user to their classroom with descriptions of where to go.<br><br>
+              This app will generate the shortest path to a destination following Calvin’s walking paths. It will also
+              provide navigation for the interior of buildings by displaying the floor plan and showing the path to the
+              destination, so if a student needs to get to a classroom on the second floor of the Science Building, our
+              app will guide the student first to the Science Building if they are not already there, onces the user is
+              inside the building it show the floor plan of the current floor that the user is on. <Br><br>Finally, the
+              app will
+              show a path that tells the user to go up the stairs or elevator, which will change the current floor plan
+              to the second floor and show a path to their classroom.
+
+            </p>
+            <div class="tm-next">
+              <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row tm-section-pad-top">
+        <div class="col-lg-4">
+
+          <h4 class="text-center tm-text-primary mb-4">Chris Jeong</h4>
+          <p>
+            "I am interested in this project since I always had trouble finding classes and I felt like making an
+            application like this will not just help me but also students who are new or do not know too much about the
+            campus..."
+          </p>
+        </div>
+
+        <div class="col-lg-4 mt-5 mt-lg-0">
+
+          <h4 class="text-center tm-text-primary mb-4">David Heynen</h4>
+          <p>
+            "I am interested in this project idea because I thought that it could be a helpful tool for new students and
+            people who are unfamiliar with the Calvin campus. Its a way to help the community. .."
+          </p>
+        </div>
+        <div class="col-lg-4 mt-5 mt-lg-0">
+
+          <h4 class="text-center tm-text-primary mb-4">David Mirakian</h4>
+          <p>
+            "This project is interesting to me because of its focus on GPS navigation. I have experience making data
+            entry style web apps but have never worked on one that incorporates navigation before. This will be a
+            valuable learning experience for me..."
+          </p>
+        </div>
+      </div>
+  </section>
+  <section id="work" class="tm-section-pad-top">
+    <div class="container tm-container-gallery">
+      <div class="row">
+        <div class="text-center col-12">
+          <h2 class="tm-text-primary tm-section-title mb-4">Our Code</h2>
+          <p class="mx-auto tm-work-description">
+            I dunno what to put here yet..
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="tm-section-pad-top tm-parallax-2">
+    <div class="container tm-container-contact">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mb-4 tm-section-title">Project Links</h2>
+          <div class="mb-5 tm-underline">
+            <div class="tm-underline-inner"></div>
+          </div>
+          <p class="mb-5">
+            Thanks for checking out on our project...
+          </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <a href="https://github.com/dmirak/CalvinRoomFinder" class="tm-contact-item-link">
+            <i class="fas fa-3x fa-home mr-4"></i>
+            <span class="mb-0">Our Github</span>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <a href="https://computing.calvin.edu/" class="tm-contact-item-link">
+            <i class="fas fa-3x fa-desktop mr-4"></i>
+            <span class="mb-0">CS Department</span>
+          </a>
+        </div>
+
+
+      </div>
+    </div>
+    <footer class="text-center small tm-footer">
+      <p class="mb-0">
+        Copyright &copy; 2019 Company Name
+
+        - Design: <a rel="nofollow" href="https://templatemo.com" class="tm-footer-link">Template Mo</a>
+      </p>
+    </footer>
+  </section>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+
+    function getOffSet() {
+      var _offset = 450;
+      var windowHeight = window.innerHeight;
+
+      if (windowHeight > 500) {
+        _offset = 400;
+      }
+      if (windowHeight > 680) {
+        _offset = 300
+      }
+      if (windowHeight > 830) {
+        _offset = 210;
+      }
+
+      return _offset;
+    }
+
+    function setParallaxPosition($doc, multiplier, $object) {
+      var offset = getOffSet();
+      var from_top = $doc.scrollTop(),
+        bg_css = 'center ' + (multiplier * from_top - offset) + 'px';
+      $object.css({ "background-position": bg_css });
+    }
+
+    // Parallax function
+    // Adapted based on https://codepen.io/roborich/pen/wpAsm
+    var background_image_parallax = function ($object, multiplier, forceSet) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      // $object.css({"background-attatchment" : "fixed"});
+
+      if (forceSet) {
+        setParallaxPosition($doc, multiplier, $object);
+      } else {
+        $(window).scroll(function () {
+          setParallaxPosition($doc, multiplier, $object);
+        });
+      }
+    };
+
+    var background_image_parallax_2 = function ($object, multiplier) {
+      multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+      multiplier = 1 - multiplier;
+      var $doc = $(document);
+      $object.css({ "background-attachment": "fixed" });
+      $(window).scroll(function () {
+        var firstTop = $object.offset().top,
+          pos = $(window).scrollTop(),
+          yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+        var bg_css = 'center ' + yPos + 'px';
+
+        $object.css({ "background-position": bg_css });
+      });
+    };
+
+    $(function () {
+      // Hero Section - Background Parallax
+      background_image_parallax($(".tm-parallax"), 0.30, false);
+      background_image_parallax_2($("#contact"), 0.80);
+
+      // Handle window resize
+      window.addEventListener('resize', function () {
+        background_image_parallax($(".tm-parallax"), 0.30, true);
+      }, true);
+
+      // Detect window scroll and update navbar
+      $(window).scroll(function (e) {
+        if ($(document).scrollTop() > 120) {
+          $('.tm-navbar').addClass("scroll");
+        } else {
+          $('.tm-navbar').removeClass("scroll");
+        }
+      });
+
+      // Close mobile menu after click
+      $('#tmNav a').on('click', function () {
+        $('.navbar-collapse').removeClass('show');
+      })
+
+      // Scroll to corresponding section with animation
+      $('#tmNav').singlePageNav();
+
+      // Add smooth scrolling to all links
+      // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 400, function () {
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      // Pop up
+      $('.tm-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: { enabled: true }
+      });
+
+      // Gallery
+      $('.tm-gallery').slick({
+        dots: true,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
+
 </html>
