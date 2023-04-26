@@ -99,38 +99,59 @@
               to the second floor and show a path to their classroom.
 
             </p>
-            <h2 class="tm-text-primary tm-section-title mb-4">Flow of Use</h2>
-            <p class="mb-4 tm-intro-text">
-              The app will open to a map of campus, indicating the user’s current location and direction. They will then
-              be able to tap on a search bar at the top of the screen to begin searching for locations. As they type in
-              a building and room number, suggestions will slide down from the search bar. These suggestions will
-              include cached locations that the user has previously traveled to. Each suggestion will also include a
-              rough estimate of the distance/time to reach.<br><br>
-              When the user selects a destination, they will be taken back to the map with a status bar at the bottom.
-              This status bar will show the user their remaining distance and how long it will take them to reach their
-              destination based on their average walking speed. The map will also highlight the route they must take
-              along pathways.<br><br>
-              Once the user gets near a building a button saying “I have reached my building” will appear. When pressed
-              the app will switch to interior mode. Instead of a campus map, it will display a floorplan of the building
-              with the ability to cycle between floors. The path the user must take will still be highlighted, but GPS
-              tracking will be disabled.
-              When the user reaches their destination, they can press an X button on the status bar that will end the
-              current route.<br><br>
-              At any point in this process, the user can open the search bar again to choose a new location. They can
-              also open the settings menu which will contain important settings like accessibility mode and a map
-              rotation toggle.
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <img src="img/wire.png" alt="Image" class="img-fluid tm-intro-img" /><br><br>
+        </div>
+  
+        <div class="col-lg-6">
+          <h2 class="tm-text-primary tm-section-title mb-4">Flow of Use</h2>
+          <p class="mb-4 tm-intro-text">
+            The app will open to a map of campus, indicating the user’s current location and direction. They will then
+            be able to tap on a search bar at the top of the screen to begin searching for locations. As they type in
+            a building and room number, suggestions will slide down from the search bar. These suggestions will
+            include cached locations that the user has previously traveled to. Each suggestion will also include a
+            rough estimate of the distance/time to reach.<br><br>
+            When the user selects a destination, they will be taken back to the map with a status bar at the bottom.
+            This status bar will show the user their remaining distance and how long it will take them to reach their
+            destination based on their average walking speed. The map will also highlight the route they must take
+            along pathways.<br><br>
+            Once the user gets near a building a button saying “I have reached my building” will appear. When pressed
+            the app will switch to interior mode. Instead of a campus map, it will display a floorplan of the building
+            with the ability to cycle between floors. The path the user must take will still be highlighted, but GPS
+            tracking will be disabled.
+            When the user reaches their destination, they can press an X button on the status bar that will end the
+            current route.<br><br>
+            At any point in this process, the user can open the search bar again to choose a new location. They can
+            also open the settings menu which will contain important settings like accessibility mode and a map
+            rotation toggle.
+          </p>
+          <h2 class="tm-text-primary tm-section-title mb-4">Problems</h2>
+          <p class="mb-4 tm-intro-text">
+            Indoor navigation: We originally planned to support indoor navigation that would show the route inside buildings for students to follow to their classroom. We were unable to add this feature in time though. We went through the process of submitting many of Calvin’s floor plans to Google in order for them to be added to Google Maps. Google was not able to get the floor plans added to their database in time for us to add this feature to Calvin Room Finder.<br><br>
+            M ap rotation: The publicly available Google Maps API does not support map rotation for roadmaps. We were not anticipating this and were not able to find another way to rotate the map, so the user is only able to pan and zoom the map.<br><br>
+            User heading: We had trouble getting reliable heading data from the phone’s compass. Instead we used geolocation to watch the user's position and calculate the heading from it. This is not quite as precise as a compass, but still works when the user is walking.<br><br>
+            Notifications: We planned to add a scheduling page to Calvin Room Finder. This page allows the user to add classes to their schedule, noting the time and location of the class. Then the app would send notifications when it was almost time for class. When clicked on, these notifications would open up the map and automatically navigate to the user’s classroom. We completed the schedule page but did not have time to include notifications. Because of this we decided to not include the schedule page in the final product as it is not complete yet. Many of the notification plugins that we tried were either depreciated or did not work in a PWA. It is likely that we would need to set up a server and cloud functions through Firebase. This would also require unique user token authentication. We did not have time to complete this feature.
+            <br><br> 
+          </p>
 
 
+          <h2 class="tm-text-primary tm-section-title mb-4">Future Work</h2>
+          <p class="mb-4 tm-intro-text">          
+            1.Completing the Schedule page by adding notifications<br><br>
+            2.Adding indoor routing functionality<br><br>
+            3.Allowing user to rotate the map<br><br>
+            4.Expanding the locations you can route to (more buildings or landmarks)</p>
 
-
-
-            </p>
-            <div class="col-lg-6">
-              <img src="img/wire.png" alt="Image" class="img-fluid tm-intro-img" /><br><br>
-            </div>
-            <div class="tm-next">
-              <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
-            </div>
+            <h2 class="tm-text-primary tm-section-title mb-4">Acknowledgements</h2>
+            <p class="mb-4 tm-intro-text">          
+              We would like to express our appreciation to our advisor, Professor Victor Norman, for leading and helping us throughout the building process. We could not have been able to do it without the resources and knowledge that our professor provided. 
+              </p>
+          <div class="tm-next">
+            <a href="#work" class="tm-intro-text tm-btn-primary">Read More</a>
           </div>
         </div>
 
@@ -204,6 +225,12 @@
           <a href="https://computing.calvin.edu/" class="tm-contact-item-link">
             <i class="fas fa-3x fa-desktop mr-4"></i>
             <span class="mb-0">CS Department</span>
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 d-flex align-items-center tm-contact-item">
+          <a href="https://calvinroomfinder.web.app/tutorial" class="tm-contact-item-link">
+            <i class="fas fa-3x fa-home mr-4"></i>
+            <span class="mb-0">Our WebAPP</span>
           </a>
         </div>
 
